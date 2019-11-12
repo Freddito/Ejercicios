@@ -9,6 +9,7 @@ public class Ejercicio {
         Operaciones obj = new Operaciones ();
         Arreglos opcB = new Arreglos();
         Matrices opcC = new Matrices();
+        Ordenamientos opcD = new Ordenamientos();
         int w=1;
         
         while(w==1){
@@ -17,7 +18,8 @@ public class Ejercicio {
                                                                      "1. Operaciones Basicas\n"+
                                                                      "2. Arreglos\n"+
                                                                      "3. Matrices\n"+
-                                                                     "4. SALIR\n"));
+                                                                     "4. Ordenamientos\n"+
+                                                                     "5. SALIR\n"));
            
            switch(opcion){
                case 1:
@@ -33,6 +35,10 @@ public class Ejercicio {
                    break;
                    
                case 4:
+                   opcD.opcionD();
+                   break;
+                   
+               case 5:
                    w=0;
                    JOptionPane.showMessageDialog(null, "SALIENDO");
                    break;
