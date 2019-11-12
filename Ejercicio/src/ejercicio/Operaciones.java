@@ -1,7 +1,6 @@
 
 package ejercicio;
 
-import java.util.Scanner;
 import javax.swing.JOptionPane;
 
 public class Operaciones {
@@ -84,27 +83,5 @@ public class Operaciones {
     public double division(){
        return (double) this.getNumero1()/this.getNumero2(); 
     }
-    
-    public void tablaMultiplicar(){
-        int tabla [][] = new int [10][3];
-        int numero;
-        numero = Integer.parseInt(JOptionPane.showInputDialog("digite un numero"));
-        
-        for(int i=0 ; i<10 ; i++){
-                tabla[i][0]=numero;
-                tabla[i][1]=i+1;
-                tabla[i][2] = tabla[i][0] * tabla[i][1];
-        }
-        for(int i=0 ; i<10 ; i++){
-                JOptionPane.showMessageDialog(null,tabla[i][0]+" X "+tabla[i][1]+" = "+tabla[i][2]);
-        }  
-    }
-    
-    public void vector(){
-        String arregloDatos [] = new String[3];
-       
-                
-       
-                
-    }
+   
 }
