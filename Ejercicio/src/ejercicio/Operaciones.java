@@ -5,8 +5,8 @@ import java.util.Scanner;
 import javax.swing.JOptionPane;
 
 public class Operaciones {
-    private int numero1;
-    private int numero2;
+    private int numero1 = 0;
+    private int numero2 = 0;
     private double resultado;
     
     
@@ -34,27 +34,54 @@ public class Operaciones {
         return this.resultado;
     }
     
-    public int sumar(int num1, int num2){
-        this.setNumero1(num1);
-        this.setNumero2(num2);
+    public void opcionA(){
+                int i=1;
+                numero1 = Integer.parseInt(JOptionPane.showInputDialog(null,"digite el valor del primer numero"));
+                numero2 = Integer.parseInt(JOptionPane.showInputDialog(null,"digite el valor del segundo numero"));
+                while(i==1){
+                int opc = Integer.parseInt(JOptionPane.showInputDialog(null,"SELECCIONE UNA OPCION\n"+
+                                                                            "1. SUMA\n"+
+                                                                            "2. RESTA\n"+
+                                                                            "3. MULTIPLICACION\n"+
+                                                                            "4. DIVISION\n"+
+                                                                            "5. VOLVER"));
+        
+                switch (opc){
+                    case 1:
+                        JOptionPane.showMessageDialog(null, sumar());
+                        break;
+                    case 2: 
+                        JOptionPane.showMessageDialog(null, restar());
+                        break;
+                    case 3:
+                        JOptionPane.showMessageDialog(null, multiplicar());
+                        break;
+                    case 4:
+                        JOptionPane.showMessageDialog(null, division());
+                        break;
+                    case 5:
+                        i=0;
+                        JOptionPane.showMessageDialog(null, "VOLVIENDO");
+                        break;
+                    default:
+                        JOptionPane.showMessageDialog(null, "opcion no valida");
+                 }     }
+        
+    }
+    
+    public int sumar(){
        return this.getNumero1() + this.getNumero2(); 
     }
     
-    public int restar(int num1, int num2){
-        this.setNumero1(num1);
-        this.setNumero2(num2);
+    public int restar(){
        return this.getNumero1() - this.getNumero2(); 
     }
     
-    public int multiplicar(int num1, int num2){
-        this.setNumero1(num1);
-        this.setNumero2(num2);
+    public int multiplicar(){
        return this.getNumero1() * this.getNumero2(); 
     }
     
-    public double division(int num1, int num2){
-        this.setNumero1(num1);
-        this.setNumero2(num2);
+    public double division(){
        return (double) this.getNumero1()/this.getNumero2(); 
     }
     
