@@ -103,14 +103,8 @@ public class Operaciones {
     public void vector(){
         String arregloDatos [] = new String[3];
        
-                for(int i=0; i<arregloDatos.length;i++){
-                    
-                    arregloDatos[i]=JOptionPane.showInputDialog("ingrese un valor tipo String en la posicion "+ i );
-                }
+                
        
-                for(int j=0;j<arregloDatos.length;j++){
-           
-                    JOptionPane.showMessageDialog(null,"el valor en la posicion "+ j + " es "+ arregloDatos[j] );
-                }
+                
     }
 }
