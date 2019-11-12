@@ -8,6 +8,7 @@ public class Ejercicio {
     public static void main(String[] args) {
         Operaciones obj = new Operaciones ();
         int w=1;
+        int f=0;
         
         while(w==1){
             
