@@ -7,15 +7,16 @@ public class Ejercicio {
 
     public static void main(String[] args) {
         Operaciones obj = new Operaciones ();
+        Arreglos opcB = new Arreglos();
         int w=1;
         int f=0;
         
         while(w==1){
             
            int opcion = Integer.parseInt(JOptionPane.showInputDialog("SELECCIONE UNA OPCION\n"+
-                                                                     "1. CALCULADORA\n"+
-                                                                     "2. TABLA DE MULTIPLICAR\n"+
-                                                                     "3. CARGAR Y MOSTRAR UN VECTOR\n"+
+                                                                     "1. Operaciones Basicas\n"+
+                                                                     "2. Arreglos\n"+
+                                                                     "3. Matrices\n"+
                                                                      "4. SALIR\n"));
            
            switch(opcion){
@@ -24,7 +25,7 @@ public class Ejercicio {
                    break;
                    
                case 2:
-                   obj.tablaMultiplicar();
+                   opcB.opcionB();
                    break;
                    
                case 3:
