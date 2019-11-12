@@ -8,8 +8,8 @@ public class Ejercicio {
     public static void main(String[] args) {
         Operaciones obj = new Operaciones ();
         Arreglos opcB = new Arreglos();
+        Matrices opcC = new Matrices();
         int w=1;
-        int f=0;
         
         while(w==1){
             
@@ -29,7 +29,7 @@ public class Ejercicio {
                    break;
                    
                case 3:
-                   obj.vector();
+                   opcC.opcionC();
                    break;
                    
                case 4:
