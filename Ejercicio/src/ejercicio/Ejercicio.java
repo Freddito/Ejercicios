@@ -10,16 +10,18 @@ public class Ejercicio {
         Arreglos opcB = new Arreglos();
         Matrices opcC = new Matrices();
         Ordenamientos opcD = new Ordenamientos();
+        Listas opcE = new Listas();
         int w=1;
         
         while(w==1){
             
            int opcion = Integer.parseInt(JOptionPane.showInputDialog("SELECCIONE UNA OPCION\n"+
-                                                                     "1. Operaciones Basicas\n"+
-                                                                     "2. Arreglos\n"+
-                                                                     "3. Matrices\n"+
-                                                                     "4. Ordenamientos\n"+
-                                                                     "5. SALIR\n"));
+                                                                     "A. Operaciones Basicas\n"+
+                                                                     "B. Arreglos\n"+
+                                                                     "C. Matrices\n"+
+                                                                     "D. Ordenamientos\n"+
+                                                                     "E. Listas\n"+
+                                                                     "F. Salir\n"));
            
            switch(opcion){
                case 1:
@@ -39,6 +41,10 @@ public class Ejercicio {
                    break;
                    
                case 5:
+                   opcE.opcionE();
+                   break;
+                   
+               case 6:
                    w=0;
                    JOptionPane.showMessageDialog(null, "SALIENDO");
                    break;
