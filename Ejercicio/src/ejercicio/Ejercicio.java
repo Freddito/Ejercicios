@@ -12,6 +12,7 @@ public class Ejercicio {
         Ordenamientos opcD = new Ordenamientos();
         Listas opcE = new Listas();
         Pilas opcF = new Pilas();
+        Colas opcG = new Colas();
         int w=1;
         
         while(w==1){
@@ -23,7 +24,8 @@ public class Ejercicio {
                                                                      "4. Ordenamientos\n"+
                                                                      "5. Listas\n"+
                                                                      "6. Pilas\n"+
-                                                                     "7. Salir"));
+                                                                     "7. Colas\n"+
+                                                                     "8. Salir"));
            
            switch(opcion){
                case 1:
@@ -51,6 +53,10 @@ public class Ejercicio {
                    break;
                    
                case 7:
+                   opcG.opcionG();
+                   break;
+                   
+               case 8:
                    w=0;
                    JOptionPane.showMessageDialog(null, "SALIENDO");
                    break;
